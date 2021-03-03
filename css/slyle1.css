@@ -1,0 +1,132 @@
+/*
+https://colorpalettes.net/color-palette-3844/
+  #003d60 azul escuro
+  #00aab7 azul agua
+  #b8ccc6 azul/verde/cinzento
+  #f1ece9 perola
+  #f9e3be areia da praia
+
+*/
+body
+{
+  background-color: #f1ece9;
+  margin: 0;
+}
+header
+{
+  background-color: #003d60;
+  padding: 1px;
+}
+nav
+{
+  background-color: #003d60;
+  padding: 2px;
+}
+footer
+{
+  background-color: #003d60;
+  padding: 2px;
+  margin-bottom: 0px;
+}
+h1
+{
+  color: #f9e3be;
+  font-family: 'Droid serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px; 
+  text-align: center;
+}
+h2
+{
+  color: white;
+  font-family: 'Droid serif', serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px; 
+  text-align: center;
+}
+hr
+{
+  color: #f9e3be;
+}
+.main_text
+{
+  color:#003d60;
+  padding: 10px 10px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 14px;
+}
+p.footer_text
+{
+  color:#b8ccc6;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 110%;
+  padding: 10px 10px;
+}
+ul
+{
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+
+}
+li
+{
+  float: left;
+  display: inline;
+  border-top: 1px solid  #f9e3be;
+  border-bottom: 1px solid #f9e3be;
+  border-left: 1px solid #f9e3be;
+  border-right: 1px solid #f9e3be;
+}
+li a
+{
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 110%;
+  font-family: 'Droid serif', serif;
+  font-style: italic;
+  color: #f1ece9;
+}
+li a.download
+{
+  color:#f9e3be;
+}
+/* Cores quando se passa o rato */
+li a:hover
+{
+  background-color: #00aab7;
+  color: #174D4D;
+}
+/*Janela ativa */
+li a.active
+{
+  background-color: #b8ccc6;
+  color: #174D4D;
+}
+img.main
+{
+  max-width: 90%;
+  height: auto;
+  border: 5px solid #003d60;
+  border-radius: 50%;
+}
+container
+{
+  background-color: #b8ccc6;
+  color: #174D4D;
+}
+
+
