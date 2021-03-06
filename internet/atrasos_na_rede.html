@@ -8,7 +8,7 @@
 
     <header>
       <div id = "subject">
-        <h1>Informação e comunicação</h1>
+        <h1>Info-com</h1>
       </div>
     </header>
 
@@ -33,17 +33,28 @@
 <!--##################CONTENT#######################-->
     <h2>Internet</h2>
     
+      <h3>Visão geral do atraso em redes comutadas por pacote</h3>
 
-      <h3>Atrasos na rede</h3>
-            
-        <p>Lembre-se de que um pacote começa num host (a origem), passa por uma série de roters e termina sua jornada noutro host (o destino). Conforme um pacote viaja de um nó (host ou roter) para o nó subsequente (host ou roter) ao longo deste caminho, o pacote sofre de vários tipos de atrasos em cada nó ao longo do caminho. Os mais importantes desses atrasos são o <b>atraso de processamento nodal, atraso de fila, atraso de transmissão e atraso de propagação</b>; juntos, esses atrasos acumulam-se para dar um atraso total. O desempenho de muitos aplicativos da Internet é afetado por atrasos na rede. </p> 
-            
-      <h4>Tipos de atrasos</h4>
+        <p>Lembre-se de que um pacote começa num host (a origem), passa por uma série de routers e termina sua jornada noutro host (o destino). Conforme um pacote viaja de um nó (host ou router) para o nó subsequente (host ou router) ao longo deste caminho, o pacote sofre de vários tipos de atrasos em cada nó ao longo do caminho. Os mais importantes desses atrasos são o <b>atraso de processamento nodal, atraso de fila, atraso de transmissão e atraso de propagação</b>; juntos, esses atrasos acumulam-se para dar um atraso total. O desempenho de muitos aplicativos da Internet é afetado por atrasos na rede.</p>
 
-      <h4>Arieiv</h4>
+      <h3>Tipos de atraso</h3>
 
-      <p>Gosta de brasileiras que conheceu na internet. Motivo mais forte atualmente para o fim da internet</p>
-        
+      <h4>Atraso de processamento</h4>
+
+        <p>O tempo necessário para examinar o cabeçalho do pacote e determinar para onde direcionar o pacote é parte do atraso de processamento. O atraso de processamento também pode incluir outros fatores, como o tempo necessário para verificar os erros de nível de bit no pacote que ocorreram na transmissão dos bits do pacote do nó ascendente para o roteador A. Os atrasos de processamento em roteadores de alta velocidade são normalmente da ordem de microssegundos ou menos. Após esse processamento nodal, o router direciona o pacote para a fila que precede o link do router B.</p>
+      
+      <h4>Atraso na fila</h4>
+      
+        <p>O pacote, na fila, aguarda para ser transmitido para o link. A duração deste atraso depende do número de pacotes que chegam antes e já se encontram na fila, aguardando transmissão para o link. Se a fila estiver vazia e nenhum outro pacote estiver sendo transmitido no momento, o atraso de enfileiramento do nosso pacote será zero.</p>
+        <p> Por outro lado, se o tráfego for intenso e muitos outros pacotes também estiverem à espera para serem transmitidos, o atraso será longo. Veremos em breve que o número de pacotes que um pacote que chega pode esperar encontrar é função da intensidade e da natureza do tráfego que chega à fila. Atrasos na fila podem ser da ordem de microssegundos a milissegundos na prática.</p>
+    
+
+    <h4>Atraso de transmissão</h4> 
+
+      <p>O atraso de propagação é a distância entre dois routers dividida pela velocidade de propagação. Ou seja, o atraso de propagação é d / s, onde d é a distância entre o roteador A e o roteador B e s é a velocidade de propagação do link.</p>
+      <p>Assumindo que os pacotes são transmitidos por ordem de chegada, como é comum em redes comutadas por pacotes, o nosso pacote pode ser transmitido apenas após todos os pacotes que chegaram antes serem transmitidos. Denote o comprimento do pacote por L bits com a taxa de transmissão de o link do router A para o roteador B de R bits / s. Depois que o último bit do pacote se propaga para o nó B, ele e todos os bits anteriores do pacote são armazenados no router B. Todo o processo continua com o roteador B agora executando o encaminhamento.</p>
+      <p>Por exemplo, para um link Ethernet de 10 Mbps, a taxa de transmissão é o atraso de transmissão é L / R. Esta é a quantidade de tempo necessária para enviar todos os bits do pacote no link. Estes atrasos são normalmente da ordem de microssegundos a milissegundos na prática.</p>
+      <p>A velocidade de propagação depende do meio físico do link (ou seja, fibra óptica, fio de cobre de par trançado e assim por diante) e é igual ou um pouco menor que a velocidade da luz.</p>
       
 <!--##################CONTENT#######################-->  
 
