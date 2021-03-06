@@ -48,13 +48,14 @@
         <p>O pacote, na fila, aguarda para ser transmitido para o link. A duração deste atraso depende do número de pacotes que chegam antes e já se encontram na fila, aguardando transmissão para o link. Se a fila estiver vazia e nenhum outro pacote estiver sendo transmitido no momento, o atraso de enfileiramento do nosso pacote será zero.</p>
         <p> Por outro lado, se o tráfego for intenso e muitos outros pacotes também estiverem à espera para serem transmitidos, o atraso será longo. Veremos em breve que o número de pacotes que um pacote que chega pode esperar encontrar é função da intensidade e da natureza do tráfego que chega à fila. Atrasos na fila podem ser da ordem de microssegundos a milissegundos na prática.</p>
     
-
     <h4>Atraso de transmissão</h4> 
 
       <p>O atraso de propagação é a distância entre dois routers dividida pela velocidade de propagação. Ou seja, o atraso de propagação é d / s, onde d é a distância entre o roteador A e o roteador B e s é a velocidade de propagação do link.</p>
       <p>Assumindo que os pacotes são transmitidos por ordem de chegada, como é comum em redes comutadas por pacotes, o nosso pacote pode ser transmitido apenas após todos os pacotes que chegaram antes serem transmitidos. Denote o comprimento do pacote por L bits com a taxa de transmissão de o link do router A para o roteador B de R bits / s. Depois que o último bit do pacote se propaga para o nó B, ele e todos os bits anteriores do pacote são armazenados no router B. Todo o processo continua com o roteador B agora executando o encaminhamento.</p>
       <p>Por exemplo, para um link Ethernet de 10 Mbps, a taxa de transmissão é o atraso de transmissão é L / R. Esta é a quantidade de tempo necessária para enviar todos os bits do pacote no link. Estes atrasos são normalmente da ordem de microssegundos a milissegundos na prática.</p>
       <p>A velocidade de propagação depende do meio físico do link (ou seja, fibra óptica, fio de cobre de par trançado e assim por diante) e é igual ou um pouco menor que a velocidade da luz.</p>
+
+    <p>Fonte: LinkComputer networking : a top-down approach / James F. Kurose, Keith W. Ross</p> 
       
 <!--##################CONTENT#######################-->  
 
