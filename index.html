@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <link rel="stylesheet" href="./css/slyle1.css">
-  </head>
 
-  <body> 
+<meta charset="UTF-8">
 
-    <header>
-      <div id = "subject">
-        <h1>Informação e comunicação</h1>
-      </div>
-    </header>
+  <html lang="pt">
+    <head>
+      <link rel="stylesheet" href="./css/slyle1.css">
+    </head>
 
-    <nav>
-      <hr>
-      <ul>
-        <li><a class="active" href="../index.html"> Index</a></li>
-        <li><a href="./contacts.html"> Contacts</a></li>
-      </ul>
-      
-      <div class="dropdown">
-        <button class="dropbtn">Internet</button>
-        <div class="dropdown-content">
-          <a href="./internet/atrasos_na_rede.html">Atrasos na rede</a>
+    <body> 
+
+      <header>
+        <div id = "subject">
+          <h1>Informação e comunicação</h1>
         </div>
+      </header>
+
+      <nav>
+        <hr>
+        
+        <ul>
+          <li><a class="active" href="../index.html"> Index</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Internet</a>
+            <div class="dropdown-content">
+              <a href="./internet/atrasos_na_rede.html">Atrasos na rede</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Camada de aplicação</a>
+            <div class="dropdown-content">
+                <a href="./app_layer/protocolos.html">Protocolos</a>
+            </div>
+          </li>
+          <li><a href="./contacts.html"> Contactos</a></li>
+        </ul>
+        <hr>
+      </nav>
+
+      <div >
+        <img src="./images/router.jpg" class="main">
       </div>
-      
-      <hr>
-    </nav>
 
-    <div >
-      <img src="./images/router.jpg" class="main">
-    </div>
+      <footer>
+        <hr>
+        <p class="footer_text"> <b>Autor: </b>Manuel Cerqueira da Silva </p>
+        <ul>
+          <a href="https://www.linkedin.com/in/manuel-cerqueira-da-silva-9305131b9/"> <img src="./images/logos/iconLinkedin.png" alt="Linkedin" width="40" height="40"></a> <br>
+          <a href="https://github.com/ManelMCCS"> <img src="./images/logos/iconGithub.png" alt="Github" title="Github"  width="40" height="40" style="margin-left: 1px;"></a> <br>
+        </ul>
+      </footer>
 
-    <footer>
-      <hr>
-      <p class="footer_text"> <b>Autor: </b>Manuel Cerqueira da Silva </p>
-      <ul>
-        <a href="https://www.linkedin.com/in/manuel-cerqueira-da-silva-9305131b9/"> <img src="./images/logos/iconLinkedin.png" alt="Linkedin" width="40" height="40"></a> <br>
-        <a href="https://github.com/ManelMCCS"> <img src="./images/logos/iconGithub.png" alt="Github" title="Github"  width="40" height="40" style="margin-left: 1px;"></a> <br>
-      </ul>
-    </footer>
-
-  </body>
-</html>
+    </body>
+  </html>
 

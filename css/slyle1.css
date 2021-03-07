@@ -21,12 +21,13 @@ nav
 {
   background-color: #003d60;
   padding: 2px;
+  margin-bottom: 2px;
 }
 footer
 {
   background-color: #003d60;
   padding: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
 }
 h1
 {
@@ -52,7 +53,7 @@ h2
 }
 h3
 {
-  color: #003d60;
+  color: #00aab7;
   font-family: 'Droid serif', serif;
   font-size: 28px;
   font-weight: 400;
@@ -70,7 +71,7 @@ h4
   font-style: italic;
   line-height: 44px;
   margin: 0 0 12px; 
-  text-align: center;
+  text-align: left;
 }
 hr
 {
@@ -78,7 +79,7 @@ hr
 }
 .main_text
 {
-  color:#003d60;
+  color: black;
   padding: 10px 10px;
   font-family: 'Droid Sans', sans-serif;
   font-size: 15px;
@@ -140,7 +141,8 @@ li a.active
 }
 img.main
 {
-  max-width: 90%;
+  border-radius: 8px;
+  max-width: 100%;
   width: max-content;
   height: max-content;
 }
