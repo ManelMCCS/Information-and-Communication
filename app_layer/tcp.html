@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">    
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="../css/slyle1.css">
+    </head>
+
+    <body> 
+
+        <header>
+            <div id = "anchor_header">
+                <h1><a href="../index.html">Informação e comunicação</a></h1>
+            </div>
+        </header>
+
+        <nav>
+            <hr>
+            <ul>
+                <li><a href="../index.html"> Index</a></li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Internet</a>
+                <div class="dropdown-content">
+                    <a href="../internet/atrasos_na_rede.html">Atrasos na rede</a>
+                </div>
+                </li>
+                <li class="dropdown">
+                <a class="active" href="javascript:void(0)" class="dropbtn">Camada de aplicação</a>
+                <div class="dropdown-content">
+                    <a href="../app_layer/protocolos.html">Protocolos</a>
+                    <a class="active" href="../app_layer/protocolos.html">TCP</a>
+                </div>
+                </li>
+                <li><a href="../contacts.html"> Contactos</a></li>
+            </ul>        
+            <hr>
+        </nav>
+        
+        <!--##################CONTENT#######################-->
+        
+        <div class="main_text">
+            <h2>Camada de aplicação</h2>
+
+            <h3>TCP</h3>
+        
+                <p>Um protocolo define o formato e a ordem das mensagens trocadas entre duas ou mais entidades comunicantes, bem como as ações tomadas na transmissão e / ou recepção de uma mensagem ou outro evento.</p>
+        
+        
+        
+            <h3>Serviços TCP</h3>
+                <p>O TCP é um serviço orientado à conexão e um serviço confiável de transferência de dados.</p> 
+        
+                <h4>Serviço orientado a conexão</h4> 
+        
+                    <p>O TCP faz com que o cliente e o servidor troquem informações de controle na camada de transporte entre si antes das mensagens no nível do aplicativo começar a fluir. Este procedimento chamado de handshaking alerta o cliente e o servidor, permitindo que eles se preparem para a troca de pacotes. Após a fase de handshaking, diz-se que uma existe uma conexão TCP entre os sockets dos dois processos. Estabelece-se uma conexão full-duplex em que os dois processos podem enviar mensagens um ao outro pela conexão ao mesmo tempo. Quando o aplicativo terminar de enviar mensagens, deve interromper a conexão.</p>
+                
+                <h4>Serviço de transferência de dados</h4>
+        
+                    <p>Os processos de comunicação podem contar com TCP para entregar todos os dados enviados sem erros e na ordem adequada. Quando um lado de o aplicativo passa um fluxo de bytes num socket, ele pode contar com o TCP para entregar o mesmo fluxo de bytes para o socket recetor, sem bytes em falta ou duplicados.</p>
+                    <p>O TCP também inclui um mecanismo de controle de congestionamento, que estrangula um processo de envio (cliente ou servidor) quando a rede está congestionada entre o emissor e o receptor.</p>    
+        
+        
+        
+            
+            <h3>Segurança do TCP</h3>
+        
+                <p>Nem TCP nem o UDP fornecem qualquer criptografia - os dados que o processo de envio passa no seu socket são os mesmos dados que passam pela rede. Assim, por exemplo, se o processo de envio enviar uma senha em texto simples (ou seja, não criptografado) no seu socket, a senha de texto não criptografado percorrerá todos os links entre remetente e receptor, sendo possivelmente intreceptado por terceiros.</p>
+                <p>Como a privacidade e outras questões de segurança se tornaram críticas para muitos aplicativos, a comunidade da Internet desenvolveu um aprimoramento para o TCP, chamado Secure Sockets Layer (SSL). TCP aprimorado com SSL oferece serviços de segurança, incluindo criptografia, integridade de dados e autenticação de terminal.</p>    
+        </div>
+            <p>Fonte: LinkComputer networking : a top-down approach / James F. Kurose, Keith W. Ross</p> 
+            
+        <!--##################CONTENT#######################-->  
+
+        <footer>
+            <hr>
+            <p class="footer_text"> <b>Autor: </b>Manuel Cerqueira da Silva </p>
+            <ul>
+            <a href="https://www.linkedin.com/in/manuel-cerqueira-da-silva-9305131b9/"> <img src="../images/logos/iconLinkedin.png" alt="Linkedin" width="40" height="40"></a> <br>
+            <a href="https://github.com/ManelMCCS"> <img src="../images/logos/iconGithub.png" alt="Github" title="Github"  width="40" height="40" style="margin-left: 1px;"></a> <br>
+            </ul>
+        </footer>
+
+    </body>
+</html>
+    
+            
