@@ -1,0 +1,28 @@
+<navbar>
+    <subject>
+        <title>Início</title>
+        <url>index.php</url>
+    </subject>
+        <title>Internet</title>
+        <subsubjects>
+            <title>Atrasos na rede</title>
+            <url>atrasos_na_rede.html</url>
+        </subsubjects>
+    <subject>
+        <title>Camada de aplicação</title>
+            <subsubjects>
+                <title>Protocolos</title>
+                <url>protocolos.html</url>
+            </subsubjects>
+            <subsubjects>
+                <title>TCP</title>
+                <url>tcp.html</url>
+            </subsubjects>
+    </subject>
+    <subject>
+        <title>Contactos</title>
+        <url>contactos.php</url>
+    </subject>
+</navbar>
+
+#need json
